@@ -1,0 +1,55 @@
+<html>
+    <head>
+        
+        <title>Welcome to Baby House</title>
+        <link rel="stylesheet" type="text/css" href="style(baby).css">
+    </head>
+    <body>
+              
+                <header class="heading" role="banner">
+                    <div class="logo">
+        <a href="baby.html">
+        <img id="logoimg" src="baby-logo.png" >
+    </a>
+        
+        </div>
+        <h1 class="center title">A Home For Baby & Kids</h1>
+        <nav>
+                <div class="masthead active-element">
+                    <div id="menu-toggle" class="menu-toggle active-element">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                    </div>
+                </div>
+                </nav>
+                                <div class="main-nav-list active-element">
+                    <ul>
+                        <li><a href="#0">Baby Care</a></li>
+                        <li><a href="#0">Baby Cloths</a></li>
+                        <li><a href="#0" class="mobile-hide">Blog</a></li>
+                        <li><a href="#0" class="active-link">About</a></li>
+                        <li><a href="#0">Contact</a></li>
+                    </ul>
+                    
+                </div>
+            </nav>
+        </header>
+        </div>
+    <script type="text/javascript">
+        var menuToggle = document.querySelector("#menu-toggle");
+        var activeElements = document.querySelectorAll(".active-element");
+        var toggledMenu = menuToggle.addEventListener("click", function(){
+             // forEach is not supported in IE11
+          // activeElements.forEach(function(e){
+          //     e.classList.toggle("active");
+          // });
+             for(var activated = 0; activated < activeElements.length; activated++){
+                  activeElements[activated].classList.toggle("active");
+             }
+        })
+    </script>    
+        
+    </body>
+
+</html>

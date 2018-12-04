@@ -147,7 +147,13 @@ body{
 /************* Style and animate the nav overlay ***********************/
 .main-nav-list::before,
 .main-nav-list::after{
-    background-color:#b94071;
+    background-image: url(tenor.gif);
+    background-size: contain;
+    background-position: center;
+    
+    
+     
+    color:#b94071;
     content:"";
     position: absolute;
     top: 0;
